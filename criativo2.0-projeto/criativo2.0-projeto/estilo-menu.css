@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: myFont;
+    background-image: url(./img/background-fortnite-blue-menu.webp);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0.0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@font-face{
+    font-family: myFont;
+    src: url(./font/BurbankBigCondensed-Bold.otf);
+}
+
+a {
+    color: azure; /* Define a cor do texto do link para azul */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: myFont;
+    color: azure;
+    flex-wrap: wrap; /* Define que o conteúdo pode quebrar linha quando necessário */
+}
+  
+.img-1{
+    width: 400px;
+    height: 680px;
+    background-image: url(./img/storm-king.jpg);
+    background-size: cover;
+    background-position: -100px center;
+    margin: 0 30px;
+    border: 8px solid #13b5da;
+    transition: transform 0.3s ease-out; /* Define a duração e o tipo de transição */
+}
+
+.img-2{
+    width: 400px;
+    height: 680px;
+    background-image: url(./img/fortnite-menu-play.jpg);
+    background-size: cover;
+    background-position: -270px center;
+    margin: 0 30px;
+    border: 8px solid #13b5da;
+    transition: transform 0.3s ease-out; /* Define a duração e o tipo de transição */
+}
+
+.img-3{
+    width: 400px;
+    height: 680px;
+    background-image: url(./img/background-creative-menu-play.webp);
+    background-size: cover;
+    background-position: -160px center;
+    margin: 0 30px;
+    border: 8px solid #13b5da;
+    transition: transform 0.3s ease-out; /* Define a duração e o tipo de transição */
+}
+
+.text-1{
+    font-size: 80px;
+    transform: scale(1.5); /* Aumenta o tamanho do texto em 50% */
+    line-height: 0.9;
+    margin: 500px 105px ;
+    display: float;
+}
+
+.text-2{
+    font-size: 80px;
+    transform: scale(1.5); /* Aumenta o tamanho do texto em 50% */
+    line-height: 0.9;
+    margin: 500px 110px ;
+    display: float;
+}
+
+.text-3{
+    font-size: 50px;
+    transform: scale(1.7); /* Aumenta o tamanho do texto em 50% */
+    line-height: 0.9;
+    margin: 540px 103px ;
+    display: float;
+    flex: 1; /* Define que o elemento deve se ajustar ao espaço disponível */
+}
+
+
+
+/* TRANSIÇÕES DE CURSOR */
+.img-1:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% ao passar o cursor */
+}
+
+.img-2:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% ao passar o cursor */
+}
+
+.img-3:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% ao passar o cursor */
+}
+/* FIM DAS TRANSIÇÕES DE BLOCOS */
+
+.rect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px;
+    color: #191A2C;
+    border: 5px solid rgb(255, 255, 160);
+    font-size: 35px;
+    transition: transform 0.2s ease-out; /* Define a duração e o tipo de transição */
+    box-shadow: 7px 7px 7px #1f2035;
+}
+
+.text-botao{
+    margin-top: 40px;
+}
+
+.rect:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 20% ao passar o cursor */
+}
