@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav ul{
+    list-style: none;
+    
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    position: fixed;
+    background-color: white;
+    height: 2rem;
+    width: 100%;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+
+#sobre {
+    background-color: rgb(90, 156, 90);
+}
+
+#servicos {
+    background-color: rgb(70, 21, 29);
+}
+
+#contato{
+    background-color: rgb(236, 196, 196);
+}

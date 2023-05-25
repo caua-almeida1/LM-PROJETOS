@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/logo.png" class="logo-head">
+    <!-- INSERÇÃO DO CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Fanta</title>
+</head>
+
+<body>
+
+    <section class="sec">
+        <header>
+            <!-- LOGO DA FANTA -->
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+
+            <!-- MENU DE NAVEGAÇÃO DO SITE -->
+            <ul>
+                <li><a href="#" class="home-ul">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">O Que Há De Novo?</a></li>
+                <li><a href="#">Nossas Parcerias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+
+        <!-- SLOGAN DA MARCA COM BOTÃO DE DIRECIONAMENTO DE PÁGINA -->
+        <div class="content">
+            <div class="textBox">
+                <h2>Ganhe Mais Com<br><span>Fanta</span></h2>
+                <p>Prepare-se para uma experiência de sabor única e surpreendente com Fanta, o refrigerante que vai levar você a um mundo de refrescância e diversão. Com suas opções cítricas de laranja, guaraná e uva, cada gole é uma viagem para um paraíso de sabores exóticos e refrescantes. Deleite-se com Fanta e descubra o prazer em cada borbulhar de felicidade. Refresque-se, vibre e deixe-se levar pelo sabor vibrante de Fanta!</p>
+                <a href="#">Ver Todos Produtos</a>
+            </div>
+        
+        <!-- DEMONSTRAÇÃO DA LATINHA PRINCIPAL -->
+            <div class="imgBox">
+                <img src="./img/01.png" class="fanta">
+            </div>
+        </div>
+
+        <!-- NAVEGAÇÃO DE TODAS AS LATINHAS -->
+        <ul class="thumb">
+            <li><img src="img/01.png" onclick="imgSlider('img/01.png');changeBgColor('#f3712c')"></li>
+            <li><img src="img/02.png" onclick="imgSlider('img/02.png');changeBgColor('#2b9b68')"></li>
+            <li><img src="img/03.png" onclick="imgSlider('img/03.png');changeBgColor('#7b3f8d')"></li>
+        </ul>
+
+        <!-- NAVEGAÇÃO DE REDES SOCIAIS -->
+        <ul class="sci">
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+        </ul>
+    </section>    
+
+
+    <!-- JAVASCRIPT COM A MUDANÇA DE TEMA AO MUDAR O SABOR -->
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.fanta').src = anything;
+        }
+
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+</html>

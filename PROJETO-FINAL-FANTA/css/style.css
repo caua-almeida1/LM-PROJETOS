@@ -1,0 +1,177 @@
+/* IMPORTAÇÃO DA FONT */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para a página principal */
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3712c;
+  transition: 0.5s;
+}
+
+/* Estilos para o header da página*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para o logo do header da página */
+header .logo {
+  position: relative;
+  max-width: 100px;
+}
+
+/* Estilos para toda a lista do menu no header */
+header ul {
+  position: relative;
+  display: flex;
+}
+
+/* Estilos para cada item do menu no header */
+header ul li {
+  list-style: none;
+}
+
+/* Estilos para os links de direcionamento do menu dentro do header */
+header ul li a {
+  display: inline-block;
+  color: #c7c7c7;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.home-ul{
+    color: #fff;
+}
+
+/* Estilos para o conteúdo principal da página */
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para a caixa de texto no conteúdo principal */
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+/* Estilos para o título maior no conteúdo principal */
+.content .textBox h2{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Estilos para o nome "Fanta" do título */
+.content .textBox h2 span{
+    font-size: 2em;
+}
+
+/* Estilos para o texto de propaganda no conteúdo principal */
+.content .textBox p{
+    color: #fff;
+}
+
+/* Estilos do botão de "VER TODOS OS PRODUTOS" */
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.content .imgBox img{
+    max-width: 600px;
+    transition: transform 0.5s ease;
+}
+
+.content .imgBox img:hover{
+    transform: scale(1.2);
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 100px;
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
