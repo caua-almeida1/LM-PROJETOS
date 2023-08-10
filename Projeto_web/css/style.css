@@ -1,0 +1,163 @@
+@font-face {
+    font-family: myFont;
+    src: url(font/Gotham\ Black\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Light;
+    src:url(font/Gotham\ Light.otf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'myFont';
+}
+
+h1{
+    color: red; 
+}
+
+header{
+    background-image: url('../img/bg3.jpg');
+    min-height: 450px;
+    padding: 45px 0 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.logo{
+    position: relative;
+    background-image:  url('../img/logo.png');
+    background-size: 100% 100%;
+    z-index: 2;
+    width: 150px;
+    height: 120px;
+    float: left; 
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+   
+}
+
+.menu-desktop{
+    float: right;
+}
+
+.menu-desktop ul{
+    list-style: none;    
+}
+
+.menu-desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu-desktop a{
+    text-decoration: none;
+    color: white;
+}
+nav.menu-desktop a{
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.menu-mobile{
+    float: right;
+    display: none;
+}
+
+.chamada{
+    padding: 150px 0;
+}
+
+.chamada h2{
+    color: #fff;
+    font-size: 45px;
+    font-family: 'myFont';
+}
+
+.chamada p{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Gotham-Light';
+}
+
+.chamada form{
+    margin-top: 15px;
+}
+
+.chamada input[type="email"] :focus{outline: 0;}
+
+.chamada input[type="email"]{
+    width: 300px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(182, 182, 182);
+    padding-left: 10px;
+    border-style: none;
+}
+
+.chamada input[type="submit"]{
+    width: 180px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: red;
+    color: white;
+    border-style: none;
+}
+
+.descricao{
+    background-color: rgb(255, 208, 0);
+    text-align: center;
+    font-size: 25px;
+    padding: 90px 0;
+    color: #fff;
+}
+
+.descricao b{
+    color: red;
+}
+
+.texto-descricao h2{
+    padding: 0 15px;
+    float: left;
+    width: 50%;
+}
+
+.descricao{
+    font-family: ;
+}
+
+/* Abaixo código de responsividade */
+
+@media screen and (max-width: 1024px) {
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    .chamada{
+        text-align: center;
+    }
+
+    .chamada input[type="email"]{
+        margin-bottom: 25px;
+    }
+
+    texto-descricao{
+        width: 100%;
+    }
+
+}
